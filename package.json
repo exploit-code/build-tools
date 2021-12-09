@@ -8,7 +8,8 @@
     "localhost": "lite-server",
     "dev:webpack": "webpack --mode=development",
     "prod:webpack": "webpack --mode=production",
-    "serve:webpack": "webpack serve --mode=development"
+    "serve:webpack": "webpack serve --mode=development",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

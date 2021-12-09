@@ -2,7 +2,7 @@ const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './lesson2/src/main.js',
+    entry: './lesson-2/src/main.js',
     output: {
         path: resolve(__dirname, 'lesson2/build'),
         filename: 'main.bundle.js'
@@ -34,7 +34,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: resolve(__dirname, 'lesson2/index.html') })
+        new HtmlWebpackPlugin({ template: resolve(__dirname, 'lesson-2/index.html') })
     ],
     devServer: {
         port: 3000
