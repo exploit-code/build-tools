@@ -32,6 +32,6 @@ countdownDiv.style.display = 'none';
 
 toggleShow(dateCalcForm, countdownDiv);
 
-const deadline = '2021-12-31';
+const deadline = '2021-12-13';
 
 runCountdown('#countdown', deadline);

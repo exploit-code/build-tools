@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: './lesson-2/src/main.js',
@@ -28,13 +29,14 @@ module.exports = {
                 }
             },
             {
-                test: /\\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
+            },
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: resolve(__dirname, 'lesson-2/index.html') })
+        new HtmlWebpackPlugin({ template: resolve(__dirname, 'lesson-2/index.html') }),
+        new MiniCssExtractPlugin()
     ],
     devServer: {
         port: 3000
