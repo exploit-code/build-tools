@@ -71,7 +71,7 @@ const runCountdown = (selector, endtime) => {
             countdownEnd.innerHTML = formatError('Действие акции закончилось');
 
             let sound = new Howl({
-                src: [alarm01]
+                src: ["../media/alarm01.mp3"]
             });
             sound.play();
         }
