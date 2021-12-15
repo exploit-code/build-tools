@@ -1,0 +1,23 @@
+
+$cl: red;
+
+h3 {
+    color: $cl;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    /*min-height: 500px;*/
+    border: 1px solid lightgray;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
